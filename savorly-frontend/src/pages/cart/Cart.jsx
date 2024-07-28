@@ -21,7 +21,7 @@ const Cart = () => {
           <p>Remove</p>
         </div>
         <br />
-        <hr />
+        {/* <hr /> */}
         {food_list.map((item, index) => {
           if (cartItems[item._id] > 0) {
             return (
@@ -36,7 +36,7 @@ const Cart = () => {
                     x
                   </p>
                 </div>
-                <hr />
+                {/* <hr /> */}
               </div>
             );
           }
@@ -73,6 +73,17 @@ const Cart = () => {
             <div className='cart-promo-code-input'>
               <input type='text' placeholder='Promo Code' />
               <button>Submit</button>
+            </div>
+          </div>
+
+          <div className='cart-image'>
+            <div className='cart-text'>
+              <h3>Your Culinary Journey Awaits</h3>
+              <p>
+                Get ready for a flavor adventure! Complete your order and enjoy
+                dishes crafted with the freshest ingredients. We appreciate your
+                trust and can't wait to serve you!
+              </p>
             </div>
           </div>
         </div>

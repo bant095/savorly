@@ -8,6 +8,8 @@ import Footer from './components/footer/Footer';
 import LoginPopUp from './components/login/LoginPopUp';
 import Verify from './pages/verify/Verify';
 import MyOrders from './pages/my-orders/MyOrders';
+import ContactUs from './pages/contact-us/ContactUs';
+import AboutUs from './pages/about/AboutUs';
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -22,6 +24,8 @@ const App = () => {
           <Route path='order' element={<PlaceOrder />} />
           <Route path='/verify' element={<Verify />} />
           <Route path='/myorders' element={<MyOrders />} />
+          <Route path='/contact' element={<ContactUs />} />
+          <Route path='/about' element={<AboutUs />} />
         </Routes>
       </div>
       <Footer />

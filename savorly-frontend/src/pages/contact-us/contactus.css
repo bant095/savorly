@@ -1,0 +1,172 @@
+.contact-container {
+  margin-top: 8%;
+}
+
+.contact-info {
+  width: 100%;
+  min-height: 80vh;
+  background: linear-gradient(rgba(0, 81, 9, 0.7), rgba(0, 47, 11, 0.7)),
+    url('/woman-influencer.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: max(5vw, 50px);
+}
+
+.contact-information {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  align-items: start;
+  margin: 70px auto;
+  width: 100%;
+  border: 1px solid rgb(202, 202, 202);
+  padding: 30px;
+}
+
+.contact-information h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-address {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+
+.contact-contain {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-icon {
+  font-size: 40px;
+  color: green;
+  border: 1px solid green;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+  background-image: contain;
+}
+.contact-text-add h5 {
+  padding-bottom: 5px;
+  font-size: 16px;
+  color: rgb(48, 48, 48);
+}
+
+.contact-text-add p {
+  padding-bottom: 5px;
+  font-size: 14px;
+  color: rgb(103, 103, 103);
+}
+
+/* send message form */
+
+.contact-col {
+  width: 50%;
+}
+
+.contact-information form input,
+.contact-col textarea {
+  display: block;
+  width: 100%;
+  background-color: #ebecfe;
+  padding: 20px;
+  border: 0;
+  outline: 0;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  resize: none;
+}
+
+.contact-col span {
+  display: block;
+  margin: 20px 0;
+}
+
+.contact-col button {
+  border: none;
+  color: white;
+  font-weight: 500;
+  padding: 1vw 2.3vw;
+  background-color: green;
+  font-size: max(1vw, 13px);
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+button .loader {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.contact-map {
+  border: 5px solid rgb(231, 231, 231);
+  padding: 5px;
+}
+
+/* media query */
+
+@media (max-width: 1100px) {
+  .contact-container {
+    margin-top: 15%;
+  }
+
+  .contact-info {
+    margin-top: 55px;
+  }
+}
+
+@media (max-width: 850px) {
+  .contact-information {
+    flex-direction: column-reverse;
+    gap: 40px;
+    align-items: start;
+    width: 100%;
+    padding: 15px;
+  }
+  .contact-col {
+    width: 100%;
+  }
+
+  .contact-address {
+    width: 100%;
+  }
+}
+
+@media (max-width: 620px) {
+  .contact-container {
+    margin-top: 25%;
+  }
+
+  .contact-info {
+    margin-top: 55px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-info {
+    margin-top: 55px;
+    min-height: 40vh;
+  }
+
+  .contact-info h2 {
+    font-size: max(3vw, 30px);
+  }
+}

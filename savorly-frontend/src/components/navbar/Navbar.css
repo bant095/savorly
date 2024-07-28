@@ -1,8 +1,13 @@
 .navbar {
-  padding: 20px 0;
+  padding: 20px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .navbar .logo {
@@ -29,7 +34,6 @@
 
 .navbar button {
   background-color: transparent;
-
   font-size: 16px;
   color: #49557e;
   border: 1px solid #008c15;
@@ -52,12 +56,34 @@
   position: relative;
 }
 
+.nav-icon {
+  font-size: 30px;
+  color: #49557e;
+  transition: all linear 1s;
+}
+
+.nav-icon:hover {
+  color: #008c15;
+}
+
+.dark-nav .nav-icon {
+  font-size: 35px;
+  color: white;
+}
+
+.dark-nav .nav-icon:hover {
+  background-color: white;
+  color: #008c15;
+  padding: 10px;
+  border-radius: 20px;
+}
+
 .navbar-search-icon .dot {
   position: absolute;
   min-width: 10px;
   min-height: 10px;
   border-radius: 5px;
-  background-color: #37fd12;
+  background-color: #2efd0a;
   top: -8px;
   right: -8px;
 }
@@ -98,7 +124,43 @@
 }
 
 .navbar-profile-dropdown li:hover {
-  color: tomato;
+  color: green;
+}
+
+.explore-menu-list-item p:hover {
+  color: green;
+}
+
+.dark-nav {
+  background-color: #008c15;
+  transition: 0.5s;
+  color: white;
+}
+
+.dark-nav .logo {
+  color: white;
+}
+
+.dark-nav .navbar-menu {
+  color: white;
+}
+
+.dark-nav .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid white;
+}
+
+.dark-nav button {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.dark-nav button:hover {
+  color: #008c15;
+}
+
+.menu-icon {
+  display: none;
 }
 
 /* ============================ */
@@ -146,9 +208,8 @@
   }
 
   .navbar-right button {
-    padding: 7px 20px;
-
-    font-size: 15px;
+    padding: 7px 15px;
+    font-size: 13px;
   }
 }
 
@@ -156,5 +217,45 @@
 @media (max-width: 750px) {
   .navbar-menu {
     display: none;
+  }
+
+  .navbar-menu ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #008c15;
+    color: white;
+    z-index: -1;
+    padding-top: 70px;
+    width: 200px;
+    transition: 0.5s;
+  }
+
+  .navbar ul li {
+    display: block;
+    margin: 25px 40px;
+    color: white;
+  }
+
+  .menu-icon {
+    display: block;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .hide-mobile-menu {
+    right: -200px;
+  }
+
+  .navbar .logo {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar-right button {
+    padding: 7px 10px;
+    font-size: 12px;
   }
 }

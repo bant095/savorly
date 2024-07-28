@@ -1,5 +1,7 @@
 .cart {
-  margin-top: 100px;
+  margin-top: 150px;
+  border: 1px solid #e2e2e2;
+  padding: 10px;
 }
 
 .cart-items-title {
@@ -8,11 +10,15 @@
   align-items: center;
   color: grey;
   font-size: max(1vw, 12px);
+  border: 1px solid #e2e2e2;
+  padding: 10px;
 }
 
 .cart-items-item {
   margin: 10px 0px;
   color: black;
+  border: 1px solid #e2e2e2;
+  padding: 10px;
 }
 
 .cart-items-item img {
@@ -56,7 +62,7 @@
 .cart-total button {
   border: none;
   color: white;
-  background-color: tomato;
+  background-color: green;
   outline: none;
   width: max(15vw, 200px);
   padding: 12px 0px;
@@ -98,7 +104,52 @@
   border-radius: 4px;
 }
 
+.cart-image {
+  height: 24vw;
+  width: 100%;
+  background: url('./chef-posing.jpg') no-repeat;
+  margin: 30px auto 60px auto;
+  border-radius: 10px;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+
+.cart-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5vw;
+  max-width: 90%;
+  bottom: 10%;
+  top: 1vw;
+  animation: fadeIn 3s;
+  text-align: center;
+  justify-content: flex-start;
+  left: 20px;
+}
+
+.cart-text h3 {
+  color: green;
+}
+
+.cart-text p {
+  font-size: 14px;
+}
+
 /* MEDIA QUERY */
+
+@media (max-width: 1200px) {
+  .cart-text p {
+    display: none;
+  }
+
+  .cart-text h3 {
+    font-size: 22px;
+    top: 1vh;
+  }
+}
 
 @media (max-width: 750px) {
   .cart-bottom {
@@ -107,5 +158,9 @@
 
   .cart-promo-code {
     justify-content: start;
+  }
+
+  .cart-image {
+    display: none;
   }
 }

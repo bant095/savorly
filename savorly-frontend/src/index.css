@@ -31,3 +31,17 @@ a {
     opacity: 1;
   }
 }
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #c7ffd1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#33ff00, #00941b);
+  border-radius: 5px;
+}

@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  text-align: center;
 }
 
 .explore-menu h1 {
@@ -10,8 +11,9 @@
 }
 
 .explore-menu-text {
-  max-width: 60%;
   color: #808080;
+  padding: 0 20%;
+  text-align: center;
 }
 
 .explore-menu-list {
@@ -34,12 +36,17 @@
   cursor: pointer;
   border-radius: 50%;
   transition: 0.2s;
+  display: block;
 }
 
 .explore-menu-list-item p {
   margin-top: 10px;
   color: #747474;
   font-size: max(1.4w, 16px);
+}
+
+.explore-menu-list-item {
+  position: relative;
 }
 
 .explore-menu hr {
@@ -50,7 +57,7 @@
 }
 
 .explore-menu-list .active {
-  border: 4px solid tomato;
+  border: 4px solid green;
 }
 
 /*/////////////////////////////// */
